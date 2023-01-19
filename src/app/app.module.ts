@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //Importamos el boton app.module.ts
 import { ButtonModule } from 'primeng/button';
+//ToolBar
+import {ToolbarModule} from 'primeng/toolbar';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,8 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    ToolbarModule,
 
   ],
   providers: [],
