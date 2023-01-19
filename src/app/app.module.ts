@@ -9,6 +9,10 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 //ToolBar
 import {ToolbarModule} from 'primeng/toolbar';
+//Riple
+import { RippleModule } from 'primeng/ripple';
+//Divider
+import { DividerModule } from "primeng/divider";
 
 
 @NgModule({
@@ -21,6 +25,8 @@ import {ToolbarModule} from 'primeng/toolbar';
     ButtonModule,
     BrowserAnimationsModule,
     ToolbarModule,
+    RippleModule,
+    DividerModule
 
   ],
   providers: [],
