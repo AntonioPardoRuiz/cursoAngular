@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 //Importamos el boton del framework 
 import {ToolbarModule} from 'primeng/toolbar';
+import { NavegadorComponent } from './navegador/navegador.component';
 
 
 

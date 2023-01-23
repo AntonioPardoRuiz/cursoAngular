@@ -13,11 +13,15 @@ import {ToolbarModule} from 'primeng/toolbar';
 import { RippleModule } from 'primeng/ripple';
 //Divider
 import { DividerModule } from "primeng/divider";
+import { NavegadorComponent } from './navegador/navegador.component';
+//Importamos la libreria para las imagenes: 
+import {ImageModule} from 'primeng/image';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavegadorComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { DividerModule } from "primeng/divider";
     BrowserAnimationsModule,
     ToolbarModule,
     RippleModule,
-    DividerModule
+    DividerModule, 
+    ImageModule
 
   ],
   providers: [],
