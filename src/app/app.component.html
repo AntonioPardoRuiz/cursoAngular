@@ -1,10 +1,10 @@
 
-<app-navegador></app-navegador>
+<app-navegador  [titulo]="miapp" [contacto]="contacto" [blog]="blog" [mesasila]="mesasila" [fechaDia]="fechaDia" (nuevoTitulo)="addNuevoTitulo($event)"></app-navegador>
  <!-- Añadimos un formulario de login-->
  <div class="container"  align="center">
  <!-- Añadimos un card-->
  <div class="card">
-  <h5>MESASILA</h5>
+  <h5>{{ nuevoTitulo }}</h5>
   <div class="grid">
     <div class="col-8 flex align-items-center justify-content-center">
       <div class="p-fluid">
