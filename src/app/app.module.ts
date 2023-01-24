@@ -16,12 +16,14 @@ import { DividerModule } from "primeng/divider";
 import { NavegadorComponent } from './navegador/navegador.component';
 //Importamos la libreria para las imagenes: 
 import {ImageModule} from 'primeng/image';
+import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavegadorComponent
+    NavegadorComponent,
+    FooterMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,9 @@ export class AppComponent {
   blog:string='BLOG';
   mesasila:string='MESASILA MUNDIAL';
   fechaDia:string='';
+  direccion:string='Calle Vicente Ferrer numero 15';
+  telefono:string='965102232';
+  email:string='antoniomiguel.pardo@inycom.es';
  
 
 //Definimos el navegador del menu 
