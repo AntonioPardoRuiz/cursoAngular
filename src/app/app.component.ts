@@ -12,6 +12,7 @@ import { NavegadorComponent } from './navegador/navegador.component';
 })
 export class AppComponent {
 
+  midireccion:boolean=false;
   title = 'angularinycom';
   miapp ="MESASILA";
   nuevoTitulo:string='';
@@ -31,10 +32,24 @@ export class AppComponent {
     //Calcular fecha del dia 
     const fecha = new Date();
     this.fechaDia = fecha.toLocaleDateString();
+    
   }
   
   addNuevoTitulo(valor:string){
     this.nuevoTitulo = valor;
+  }
+
+  /* Mostrar Direccion*/ 
+  mostrarDireccion(){
+    console.log("mostrarDireccion");
+    this.midireccion=true;
+
+  }
+
+  /*Retirar Direccion*/
+  retirarDireccion(){
+    console.log("retirarDireccion");
+    this.midireccion=false;
   }
 
 }

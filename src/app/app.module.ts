@@ -17,6 +17,9 @@ import { NavegadorComponent } from './navegador/navegador.component';
 //Importamos la libreria para las imagenes: 
 import {ImageModule} from 'primeng/image';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
+//Importamos el mapa
+import { AgmCoreModule } from '@agm/core';
+import {GMapModule} from 'primeng/gmap';
 
 
 @NgModule({
@@ -33,7 +36,11 @@ import { FooterMenuComponent } from './footer-menu/footer-menu.component';
     ToolbarModule,
     RippleModule,
     DividerModule, 
-    ImageModule
+    ImageModule, 
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBEVLuALTNr5HLHfj6OgQ53ah-HvTS0lG8'
+    }), 
+    GMapModule,
 
   ],
   providers: [],

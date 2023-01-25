@@ -35,6 +35,21 @@
     </div>
   </div>
 </div>
+<!-- Botones para mostrar ocultar el footer-->
+<div class="grid p-fluid">
+  <div class="col-12 md:col-4">
+      <div class="p-inputgroup"> 
+        <button pButton type="button" label="Ver Direccion" (click)="mostrarDireccion()"></button>
+      </div>
+  </div>
+  <div class="col-12 md:col-4">
+      <div class="p-inputgroup">
+        <button pButton type="button" label="Ocultar Direccion" (click)="retirarDireccion()"></button> 
+      </div>
+  </div>
+
 </div>
-<app-footer-menu  [direccion]="direccion" [telefono]="telefono" [email]="email"></app-footer-menu >
+<div *ngIf="midireccion">
+  <app-footer-menu  [direccion]="direccion" [telefono]="telefono" [email]="email"></app-footer-menu>
+</div>
 <router-outlet></router-outlet>
