@@ -22,21 +22,32 @@ import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 //Importamos el mapa
 import { AgmCoreModule } from '@agm/core';
 import {GMapModule} from 'primeng/gmap';
+//Importamos RouterModule 
+import { Routes, RouterModule } from '@angular/router';
+
+//Importamos los componentes.
+import { HomeComponent } from './home/home.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+//Importamos los componentes
 
-
-
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'catalogo', component: CatalogoComponent}, 
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegadorComponent,
     FooterMenuComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     ButtonModule,
     BrowserAnimationsModule,
     ToolbarModule,

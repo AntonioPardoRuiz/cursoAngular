@@ -70,7 +70,7 @@ export class CatalogoComponent implements OnInit {
   ]
   
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }
