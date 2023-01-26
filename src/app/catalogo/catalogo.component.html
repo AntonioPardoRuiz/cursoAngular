@@ -1,13 +1,35 @@
-<app-navegador></app-navegador>
-<div>
-    <p-card>
-        <ng-template pTemplate="header">
-            Contenido de la cabecera
-        </ng-template>
-            Contenido del Body
-        <ng-template pTemplate="footer">
-            Contenido del precio.
-        </ng-template>
-    </p-card>
+<div class="p-grid">
+        <app-navegador></app-navegador>
+                <div *ngFor="let silla of sillas">
+                    <div class="col">
+                        <p-card>
+                             <p-image src={{silla.urlimagen}} alt="image" width="350"></p-image>
+                             <div class="grid p-fluid">
+                                <div class="col-12 md:col-4">
+                                    <div class="p-inputgroup">
+                                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                                        <label type="text">Nombre: {{ silla.nombre }}</label>        
+                                    </div>
+                                </div>
+                                <div class="col-12 md:col-4">
+                                    <div class="p-inputgroup">
+                                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                                        <label type="text">Descripcion: {{ silla.descripcion }}</label>        
+                                    </div>
+                                </div>
+                                <div class="col-12 md:col-4">
+                                    <div class="p-inputgroup">
+                                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                                        <label type="text">Precio: {{ silla.precio }}</label>        
+                                    </div>
+                                </div>
+                            </div>
+                                <ng-template pTemplate="footer">
+                                     Cantidad:{{silla.cantidad}}
+                                </ng-template>
+                        </p-card>
+                    </div>
+                </div>
+    <app-footer-menu></app-footer-menu>
 </div>
-<app-footer-menu></app-footer-menu>
+
