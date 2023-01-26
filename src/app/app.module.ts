@@ -14,19 +14,25 @@ import { RippleModule } from 'primeng/ripple';
 //Divider
 import { DividerModule } from "primeng/divider";
 import { NavegadorComponent } from './navegador/navegador.component';
+//Importamos el card
+import {CardModule} from 'primeng/card';
 //Importamos la libreria para las imagenes: 
 import {ImageModule} from 'primeng/image';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 //Importamos el mapa
 import { AgmCoreModule } from '@agm/core';
 import {GMapModule} from 'primeng/gmap';
+import { CatalogoComponent } from './catalogo/catalogo.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegadorComponent,
-    FooterMenuComponent
+    FooterMenuComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import {GMapModule} from 'primeng/gmap';
       apiKey: 'AIzaSyBEVLuALTNr5HLHfj6OgQ53ah-HvTS0lG8'
     }), 
     GMapModule,
+    CardModule
 
   ],
   providers: [],

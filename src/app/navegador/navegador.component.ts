@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+//Para las rutas importamos
+import { Router } from '@angular/router';
 //Importamos las imagenes
 
 @Component({
@@ -18,7 +20,9 @@ export class NavegadorComponent implements OnInit {
   @Output() nuevoTitulo = new EventEmitter<string>();
   value:string="Registrese"
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
 
   ngOnInit(): void {
@@ -29,6 +33,10 @@ export class NavegadorComponent implements OnInit {
   addNuevoTitulo(){
     //Emitimos el nuevo valor
     this.nuevoTitulo.emit(this.value);
+  }
+  loadCatalogo(){
+    console.log("loadCatalogo")
+    this.router.navigate(['/catalogo'])
   }
 
 }

@@ -1,4 +1,5 @@
 
+<!--<router-outlet></router-outlet>-->
 <app-navegador  [titulo]="miapp" [contacto]="contacto" [blog]="blog" [mesasila]="mesasila" [fechaDia]="fechaDia" (nuevoTitulo)="addNuevoTitulo($event)"></app-navegador>
  <!-- Añadimos un formulario de login-->
  <div class="container"  align="center">
@@ -52,4 +53,3 @@
 <div *ngIf="midireccion">
   <app-footer-menu  [direccion]="direccion" [telefono]="telefono" [email]="email"></app-footer-menu>
 </div>
-<router-outlet></router-outlet>
