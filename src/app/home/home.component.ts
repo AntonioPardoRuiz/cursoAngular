@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  email='';
+  password='';
+
+
   constructor() { }
 
+
   ngOnInit(): void {
+  }
+  valores(){
+    console.log("Email:"+this.email);
+    console.log("Password:"+this.password);
   }
 
 }

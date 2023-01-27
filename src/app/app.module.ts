@@ -28,6 +28,7 @@ import { Routes, RouterModule } from '@angular/router';
 //Importamos los componentes.
 import { HomeComponent } from './home/home.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { FormsModule } from '@angular/forms';
 //Importamos los componentes
 
 const appRoutes: Routes = [
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     ButtonModule,
