@@ -29,12 +29,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { FormsModule } from '@angular/forms';
+import { RegistroComponent } from './registro/registro.component';
+
 //Importamos los componentes
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
-  { path: 'catalogo', component: CatalogoComponent}, 
+  { path: 'catalogo', component: CatalogoComponent},
+  { path: 'registro', component: RegistroComponent}, 
 ]
 
 @NgModule({
@@ -43,7 +46,8 @@ const appRoutes: Routes = [
     NavegadorComponent,
     FooterMenuComponent,
     CatalogoComponent,
-    HomeComponent
+    HomeComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

@@ -39,4 +39,9 @@ export class NavegadorComponent implements OnInit {
     this.router.navigate(['/catalogo'])
   }
 
+  loadRegistro(){
+    console.log("loadRegistro")
+    this.router.navigate(['/registro'])
+  }
+
 }
